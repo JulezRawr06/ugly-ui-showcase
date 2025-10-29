@@ -1,2 +1,3 @@
 console.log("Site Loaded");
-console.log("Missing semicolon")
+console.log("Fixed semicolon!");
+
