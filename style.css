@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  width: 70%;
+  border: 3px solid red;
+}
