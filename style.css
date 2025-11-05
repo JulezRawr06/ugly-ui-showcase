@@ -1,10 +1,33 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding: 24px;
   text-align: center;
+  background: #0b0f1a;
+  color: #ffffff;
 }
 
-img {
-  width: 70%;
-  border: 3px solid red;
+img { width: 70%; border: 3px solid red; margin: 20px 0; }
+
+/* container where the eye-catching effect will appear */
+#surprise {
+  position: fixed;
+  pointer-events: none;
+  inset: 0;
+  z-index: 9999;
+}
+.spark {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  opacity: 0.95;
+  mix-blend-mode: screen;
+  filter: blur(0.3px);
+  transform: translate(-50%, -50%);
+  animation: float 3s linear infinite;
+}
+@keyframes float {
+  0%   { transform: translate(-50%, -50%) translateY(0) scale(1); opacity: 0.95; }
+  50%  { transform: translate(-50%, -50%) translateY(-120px) scale(0.8); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) translateY(0) scale(1); opacity: 0.95; }
 }
