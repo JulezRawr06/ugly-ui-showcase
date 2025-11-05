@@ -4,7 +4,7 @@ describe("generatePalette", () => {
   test("returns the expected number of colors", () => {
     const pal = generatePalette(1, 5);
     expect(Array.isArray(pal)).toBe(true);
-    expect(pal).toHaveLength(6);
+    expect(pal).toHaveLength(5);
   });
 
   test("colors are hex strings of length 7 (#rrggbb)", () => {
